@@ -1,0 +1,33 @@
+.card {
+  background-color: rgb(253, 253, 253);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  height: auto;
+  border: 1px solid;
+  border-radius: 5%;
+}
+
+.box {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .box { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .box { grid-template-columns: repeat(3, 1fr); }
+}
